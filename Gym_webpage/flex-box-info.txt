@@ -1,0 +1,42 @@
+display: flex;initialisation of flex box.it can only be used for container elements.
+
+
+Container properties.
+
+we can justify-content provides alignment in horizontal direction.
+justify-content: center;provides all the boxes to be aligned centerally.
+justify-content: space-between;provides spaces between all the boxes and not at the end.
+justify-content: space-evenly;provides spaces evenly between all the boxes even the first and the last one.
+justify-content: space-around;provides spaces around all the boxes.
+
+flex-flow: row-reverse wrap;it is a shorthand to provide direction and wrapping of the boxes.
+flex-wrap: wrap-reverse;it wraps all the boxes in a reverse manner.
+flex-wrap: wrap;it wraps all the boxes.
+
+flex-direction: row;displays the boxes in a row.
+flex-direction: row-reverse;displays the boxes in a reverse manner in a row.
+flex-direction: column;displays the boxes in column in a sequential manner.
+flex-direction: column-reverse; displays the boxes in column in reverse manner.
+
+
+we can align-items provides alignment in vertical direction.
+align-items: flex-end; it starts all the boxes from the end.
+align-items: flex-start;default value.
+align-items: center;it start all the at the center.
+align-items: stretch;it provides spaces evenly vertically after we wrap our boxes.
+
+Item properties now on.
+
+order : 2 or any number;the thigher th order the later it appears in sequence it is provided for more than one boxes.
+
+flex-grow: 3;it will take more space in proportion to the second and third box the more the value the larger is the size.
+flex-shrink: 3;it will act just opposite to the flex-grow.
+flex-basis: 123px;when flex-direction is set to row it controls width of the container.
+and when flex-direction is set to column it controls height of the container.
+
+flex: 2 2 300px;when we write only flex we associate 3 properties with it flex-grow,flex-shrink,flex-basis in the given order respectively.
+
+align-self: flex-end;it will position the box or boxes at the end.
+align-self: flex-start;it will position the box or boxes at the start.
+align-self: center;it will position them at the center.
+
