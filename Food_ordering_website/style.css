@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+CSS Variables
+:root{
+    --navbar-height: 59px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+/*Navigation Bar: Logo and Image*/
+#logo{
+    margin: 10px;
+
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    color: whitesmoke;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+/*Home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 635px;
+}
+
+#home::before{
+    content: "";
+    background: url('img/food-6.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 768px;
+    width: 137%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 0.89;
+}
+
+#home h1{
+    color: rgb(19, 18, 18);
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align:center;
+    font-size: 1.5rem;
+    font-family: 'Coming Soon',cursive;
+}
+/*Services Classes*/
+#Services{
+    margin: 34px;
+    display: flex;
+
+}
+#Services .box{
+    border: 2px solid brown;
+    margin: -31px 6px;
+    padding: 36px;
+    border-radius: 23px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+#Services .box img{
+    height: 170px;
+    margin: auto;
+    display: block;
+    width: 241px;
+}
+#Services .box p{
+   font-family: 'Coming Soon',cursive; 
+}
+/*Client Section*/
+#client-section{
+    height: 100%;
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('img/food-5.jpg');
+    width: 100%;
+    height: 96%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 109px;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 40px;
+}
+/*Contact Section*/
+#contact{
+    position: relative;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: 'Coming Soon',cursive;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contact-us.jpg');
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/*utility classes*/
+
+.h-primary{
+    font-size: 3.5rem;
+    padding: 45px;
+    font-family: 'Coming Soon',cursive;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Coming Soon',cursive;
+}
+
+body #logo img{
+    height: 57px;
+    width: 70px;
+    margin: 0px;
+    border-radius: 5px;
+    padding: 1px;
+    font-size: 10px;
+}
+
+.btn{
+    margin: 37px;
+    background-color: brown;
+    color: wheat;
+    border-radius: 20px;
+    padding: 6px 20px;
+    border: 2px solid white;
+    font-size: 1.5rem;
+    font-family: 'Coming Soon',cursive;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+    font-family: 'Coming Soon',cursive;
+}
